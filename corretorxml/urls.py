@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+def home_View(request):
+    return HttpResponse("Bem-vindo à página inicial do Corretor XML!")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path ('',home_View), #home page
+    path ('corretor/',home_View) #corretor page
 ]
