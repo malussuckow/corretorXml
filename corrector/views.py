@@ -3,7 +3,6 @@ from django.http import HttpResponse
 
 
 def corretor_View(request):
-    return HttpResponse("Bem-vindo à página do Corretor XML!")
-
+    return render(request, 'corretor.html')
 
 # Create your views here.
