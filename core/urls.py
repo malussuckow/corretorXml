@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from home.views import home_View
 from corrector.views import corretor_View
+from xml_upload.views import upload_View
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('',home_View), #home page
+    path ('upload/',upload_View), #upload page
     path ('corretor/',corretor_View) #corretor page
+
 ]
