@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home.views import home_View
-from corrector.views import corretor_View
+from corretor.views import corretor_View
 from xml_upload.views import upload_View
 
 
