@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'corretor',
     'xml_upload',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
