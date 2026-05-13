@@ -23,4 +23,5 @@ urlpatterns = [
     path('upload/', include('xml_upload.urls')),#upload page
     path ('corretor/',include('corretor.urls')), #corretor page
     path('cadastro/', include('usuarios.urls')),#usuarios page
+    path('professor/', include('xml_upload.urls')), #professor page
 ]
