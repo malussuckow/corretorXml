@@ -3,4 +3,5 @@ from xml_upload import views
 
 urlpatterns = [
     path('', views.upload_xml, name='upload'),
+    path('professor/', views.upload_xml_professor, name='upload_professor'),
 ]
