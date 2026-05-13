@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuarios</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <h1>Pagina de usuarios</h1>
+    <h1>Cadastro</h1>
+    <p>Informe seus dados para criar uma nova conta.</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Cadastrar</button>
+</form>
+    
 </body>
 </html>
+
